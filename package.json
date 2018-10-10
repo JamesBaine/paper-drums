@@ -1,0 +1,22 @@
+{
+  "name": "patatap-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesBaine/patatap-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesBaine/patatap-clone/issues"
+  },
+  "homepage": "https://github.com/JamesBaine/patatap-clone#readme",
+  "dependencies": {
+    "paper": "^0.11.5"
+  }
+}
