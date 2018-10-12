@@ -11,12 +11,24 @@
     <!-- Define inlined PaperScript associate it with myCanvas -->
     <script type="text/paperscript" canvas="myCanvas">
 
+        var circles = []
         function onKeyDown(event) {
             var maxPoint = new Point(view.size.width, view.size.height)
             var randomPoint = Point.random()
             var point = maxPoint * randomPoint
-             new Path.Circle(point, 10).fillColor = 'cyan'
-             console.log(view.size.height)
+            console.log(view.size.height)
+            var newCircle = new Path.Circle(point, 500)
+            newCircle.fillColor = 'cyan'
+            circles.push(newCircle)
+        }
+
+
+        function onFrame(event) {
+            for(i = 0; i < circles.length; i++) {
+                console.log(circles[i])
+                circles[i].fillColor.hue += 1
+                circles[i].scale(.9)
+            }   
         }
 
        
